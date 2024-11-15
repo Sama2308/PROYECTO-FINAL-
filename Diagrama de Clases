@@ -1,0 +1,45 @@
++-----------------+
+|     Producto    |
++-----------------+
+| - id: Long      |
+| - nombre: String|
+| - precio: Double|
+| - cantidad: Integer|
++-----------------+
+| + getId()       |
+| + getNombre()   |
+| + getPrecio()   |
+| + getCantidad()  |
+| + setId(Long)   |
+| + setNombre(String)|
+| + setPrecio(Double)|
+| + setCantidad(Integer)|
++-----------------+
+
++-----------------+
+|   ProductoRepo  |
++-----------------+
+| + findAll(): List<Producto> |
+| + save(Producto): Producto   |
+| + findById(Long): Optional<Producto> |
+| + deleteById(Long): void     |
+| + existsById(Long): boolean   |
++-----------------+
+
++-----------------+
+| CarritoService  |
++-----------------+
+| - productos: List<Producto>  |
++-----------------+
+| + agregarProducto(Producto): void |
+| + eliminarProducto(Long): void     |
+| + calcularTotal(): Double           |
++-----------------+
+
++-----------------+
+| CarritoController|
++-----------------+
+| + agregarAlCarrito(Long): ResponseEntity |
+| + eliminarDelCarrito(Long): ResponseEntity |
+| + obtenerCarrito(): List<Producto        |
++-----------------+

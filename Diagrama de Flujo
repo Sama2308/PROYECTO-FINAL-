@@ -1,0 +1,18 @@
+Inicio
+   |
+   v
+Seleccionar Producto
+   |
+   v
+Agregar al Carrito?
+   |         |
+  Sí        No
+   |         |
+   v         v
+Confirmar   Volver a Seleccionar
+   |
+   v
+Proceder al Pago
+   |
+   v
+Fin
